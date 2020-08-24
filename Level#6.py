@@ -65,48 +65,50 @@
 
 
 #7. 8958_OX 퀴즈
+# def my_func(a):
+#     my_list = []
+#     for i in a:
+#         my_list.append(i)
+#
+#     new_my_list = list()
+#     for i in enumerate(my_list):
+#         if i[1] =='X':
+#             new_my_list.append(i[0])
+#     score = 0
+#
+#     if new_my_list == list():
+#         for z in range(len(a)+1):
+#             score += z
+#
+# # 첫수
+#     else:
+#         for z in range(new_my_list[0]+1):
+#             score += z
+#
+# #끝수
+#         for z in range(len(a) - new_my_list[-1]):
+#             score += z
+#
+#
+# # 중간수
+#         for z in range(len(new_my_list)-1):
+#             for w in range(new_my_list[z+1] - new_my_list[z]):
+#                 score += w
+#
+#     return print(score)
+#
+#
+# N = int(input())
+# my_list = []
+# for i in range(N):
+#     my_list.append(input())
+#
+# for a in my_list:
+#     my_func(a)
 
 
-
-
-
-def my_func(a):
-    my_list = []
+def solve(a: list):
+    count = 0
     for i in a:
-        my_list.append(i)
-
-    new_my_list = list()
-    for i in enumerate(my_list):
-        if i[1] =='X':
-            new_my_list.append(i[0])
-    score = 0
-
-    if new_my_list == list():
-        for z in range(len(a)+1):
-            score += z
-
-# 첫수
-    else:
-        for z in range(new_my_list[0]+1):
-            score += z
-
-#끝수
-        for z in range(len(a) - new_my_list[-1]):
-            score += z
-
-
-# 중간수
-        for z in range(len(new_my_list)-1):
-            for w in range(new_my_list[z+1] - new_my_list[z]):
-                score += w
-
-    return print(score)
-
-
-N = int(input())
-my_list = []
-for i in range(N):
-    my_list.append(input())
-
-for a in my_list:
-    my_func(a)
+        count += i
+    return print(count)
