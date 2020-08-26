@@ -139,24 +139,29 @@
 
 #8. 1011_fly me to the Alpha Centauri
 # 처음과 마지막 이동거리 1
-T = int(input())
-my_list = []
-for i in range(T):
-    x, y = map(int, input().split())
-    distance = y-x
-    k = 1
-    p = 1
-    while distance > 0:
-        distance -= k
-        k += 1
-        if distance >= p:
-            distance -= p
-            p += 1
+# T = int(input())
+# my_list = []
+# for i in range(T):
+#     x, y = map(int, input().split())
+#     distance = y-x
+#     k = 1
+#     p = 1
+#     while distance > 0:
+#         distance -= k
+#         k += 1
+#         if distance >= p:
+#             distance -= p
+#             p += 1
+#
+#     my_list.append(k+p-2)
+#
+# for i in my_list:
+#     print(i)
 
-    my_list.append(k+p-2)
 
-for i in my_list:
-    print(i)
+
+
+
 
 
 
