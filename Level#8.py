@@ -91,20 +91,20 @@
 
 #10. 1316_그룹 단어 체커
 
-import sys
-N = int(input())
-my_list = []
-for ix in range(N):
-    my_list.append(sys.stdin.readline())
-
-count = 0
-for i in my_list:
-    len_count = 0
-    for x in list(set(i)):
-        if i.count(x * i.count(x)) == -1:
-            break
-        elif i.count(x * i.count(x)) ==1:
-            len_count += len(x * i.count(x))
-    if len(i) == len_count:
-        count +=1
-print(count)
+# import sys
+# N = int(input())
+# my_list = []
+# for ix in range(N):
+#     my_list.append(sys.stdin.readline())
+#
+# count = 0
+# for i in my_list:
+#     len_count = 0
+#     for x in list(set(i)):
+#         if i.count(x * i.count(x)) == -1:
+#             break
+#         elif i.count(x * i.count(x)) ==1:
+#             len_count += len(x * i.count(x))
+#     if len(i) == len_count:
+#         count +=1
+# print(count)
