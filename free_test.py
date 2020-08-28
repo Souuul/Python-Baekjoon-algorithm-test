@@ -251,17 +251,88 @@
 # print(count)
 
 #1977_완전제곱수
-a = int(input())
-b = int(input())
-my_list = []
+# a = int(input())
+# b = int(input())
+# my_list = []
+#
+# for i in range(1, b+1):
+#     if i**2 <= b and i**2 >= a:
+#         my_list.append(i**2)
+#     elif i**2 > b:
+#         break
+# if my_list == []:
+#     print(-1)
+# else:
+#     print(sum(my_list))
+#     print(min(my_list))
 
-for i in range(1, b+1):
-    if i**2 <= b and i**2 >= a:
-        my_list.append(i**2)
-    elif i**2 > b:
-        break
-if my_list == []:
-    print(-1)
-else:
-    print(sum(my_list))
-    print(min(my_list))
+#10757_큰수 A+B
+# import sys
+# a,b = map(int, sys.stdin.readline().split())
+# print(a+b)
+
+#5086_배수와 약수
+# import sys
+# while True:
+#     a,b = map(int, sys.stdin.readline().split())
+#     if a == b == 0:
+#         break
+#
+#     elif b%a == 0:
+#         print('factor')
+#     elif a%b == 0:
+#         print('multiple')
+#     else:
+#         print('neither')
+
+#1629_곱셈
+# import sys
+# a,b,c = map(int, sys.stdin.readline().split())
+# print((a**b)%c)
+
+
+# ----36진법
+# import string
+# a = 'GOOD'
+# my_dict = {i[1]: i[0]+10 for i in enumerate(string.ascii_uppercase)}
+# print(my_dict)
+# count =0
+# my_num = 0
+# for i in a:
+#     my_num += my_dict[i]*(36**(len(a)-count-1))
+#     count += 1
+# print(my_num)
+
+
+
+#
+# count = 0
+# for z in range(8):
+#     a = str(input())
+#
+#     for i in range(1,8,2):
+#         if a[i] == 'F' and z%2 == 1:
+#             count+=1
+#
+#     for i in range(0, 8, 2):
+#         if a[i] == 'F' and z%2 == 0:
+#             count+=1
+# print(count)
+
+
+
+#1057_토너먼트
+# import sys
+# N, K, L = map(int, sys.stdin.readline().split())
+# count = 0
+# while K != L:
+#     count += 1
+#     K = (K+1)//2
+#     L = (L+1)//2
+#     if K == L:
+#         print(count)
+
+
+
+
+
